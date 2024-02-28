@@ -1,0 +1,14 @@
+[
+    {
+        "menu": "Categories",
+        "link": "categories"
+    },
+    {
+        "menu": "Website Builders",
+        "link": "websitebuilders"
+    },
+    {
+        "menu": "Today's deals",
+        "link": "todaydeals"
+    }
+]
