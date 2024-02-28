@@ -1,3 +1,6 @@
 export { default as SearchIcon } from '../assets/search-icon.svg'
 export { default as Updated } from '../assets/updated.svg'
 export { default as Disclosure } from '../assets/disclosure.svg'
+export { default as websiteBuilderImage } from '../assets/website-builder-image.svg'
+export { default as Deals1 } from '../assets/deals1.svg'
+export { default as Deals2 } from '../assets/deals2.svg'
