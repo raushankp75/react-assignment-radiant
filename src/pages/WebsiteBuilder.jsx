@@ -1,8 +1,12 @@
 import React from 'react'
+import { BreadCrumbs, WebsiteBuilderTitle } from '../components'
 
 const WebsiteBuilder = () => {
   return (
-    <div>WebsiteBuilder</div>
+    <div>
+      <WebsiteBuilderTitle />
+      <BreadCrumbs />
+    </div>
   )
 }
 
