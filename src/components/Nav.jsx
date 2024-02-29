@@ -5,10 +5,20 @@ import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 
 const NavLinks = ({ close }) => {
+
+    // changing active links
+    const navLinkStyles = ({ isActive }) => {
+        return {
+            fontWeight: isActive ? "Bold" : "normal",
+            borderBottom: isActive ? "2px solid #1B88F4" : "",
+            color: isActive ? "#999" : ""
+        }
+    }
+
     return (
         // Map menu here
         navmenu.map((nav, index) => (
-            <NavLink key={index} to={nav.link} onClick={close} className='text-[#D1D6DA]'>{nav.menu}</NavLink>
+            <NavLink key={index} to={nav.link} onClick={close} className='text-[#D1D6DA]' style={navLinkStyles}>{nav.menu}</NavLink>
         ))
     )
 }
@@ -21,6 +31,8 @@ const Nav = () => {
     const toggleNavbar = () => {
         setIsOpen(!isOpen)
     }
+
+
 
     return (
         <>

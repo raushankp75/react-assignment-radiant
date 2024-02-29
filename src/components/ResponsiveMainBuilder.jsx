@@ -3,9 +3,13 @@ import Button from './Button';
 import { Ticksign } from '../assets';
 import Star from './Star';
 
-const ResponsiveMainBuilder = ({ image, name, title, description, discount, highlight1, highlight2, highlight3, highlightText1, highlightText2, highlightText3, like1, like2, like3, stars, ratings, ratingsName }) => {
+const ResponsiveMainBuilder = ({ index, image, name, title, description, discount, highlight1, highlight2, highlight3, highlightText1, highlightText2, highlightText3, like1, like2, like3, stars, ratings, ratingsName }) => {
   return (
-    <div className='rounded-[12px] flex md:flex-row flex-col justify-between md:gap-12 gap-2 md:px-8 px-5 my-5 shadow-md bg-[#FFFFFF]'>
+    <div className='relative rounded-[12px] flex md:flex-row flex-col justify-between md:gap-12 gap-2 md:px-8 px-5 my-5 shadow-md bg-[#FFFFFF]'>
+
+      {/* Index Num */}
+      <div className='bg-[#FFFFFF] border border-solid border-[#E1E4E6] rounded-full px-2 py-2 w-[44px] h-[44px] text-[20px] leading-[28px] absolute top-8 -left-6 flex items-center justify-center gap-2'>{index + 4}</div>
+
       {/* Left */}
       <div className='flex flex-col justify-center items-center gap-3 md:w-fit w-full py-3'>
         <img src={image} alt={image} />

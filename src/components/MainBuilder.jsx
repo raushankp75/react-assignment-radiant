@@ -3,16 +3,19 @@ import Button from './Button';
 import Deals from './Deals';
 import Star from './Star';
 
-const MainBuilder = ({ image, name, title, description, highlights, dealsImage, dealsName, stars, ratings, ratingsName }) => {
+const MainBuilder = ({ index, image, name, title, description, highlights, dealsImage, dealsName, stars, ratings, ratingsName }) => {
 
     return (
         <div className='flex flex-col gap-8'>
-            <div className='relative rounded-[12px] flex md:flex-row flex-col justify-between md:gap-14 gap-2 md:px-8 px-5 my-5 bg-[#FFFFFF] normal-shadow'>
+            <div className='relative rounded-[12px] flex md:flex-row flex-col justify-between md:gap-8 gap-2 md:px-8 px-5 my-5 bg-[#FFFFFF] normal-shadow'>
 
                 {/* Deals */}
                 {
-                    dealsName && <Deals>{dealsName}</Deals>
+                    dealsName && <Deals dealsImage={dealsImage}>{dealsName}</Deals>
                 }
+
+                {/* Index Num */}
+                <div className='bg-[#FFFFFF] border border-solid border-[#E1E4E6] rounded-full px-2 py-2 w-[44px] h-[44px] text-[20px] leading-[28px] absolute top-8 -left-6 flex items-center justify-center gap-2'>{index + 1}</div>
 
                 {/* Left */}
                 <div className='flex flex-col justify-center items-center gap-3 md:w-fit w-full py-3'>

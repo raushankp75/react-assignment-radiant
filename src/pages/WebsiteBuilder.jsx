@@ -1,10 +1,9 @@
 import React from 'react'
-import { BreadCrumbs, MainBuilder, ResponsiveMainBuilder, WebsiteBuilderTitle } from '../components'
+import { BreadCrumbs, MainBuilder, RelatedDealsCard, ResponsiveMainBuilder, WebsiteBuilderTitle } from '../components'
 import { content } from '../contents/Content'
 
 const WebsiteBuilder = () => {
-  const { websiteBuilder } = content;
-  const { responsiveWebsiteBuilder } = content;
+  const { websiteBuilder, responsiveWebsiteBuilder, relatedDeals } = content;
 
   return (
     <div>
@@ -14,7 +13,8 @@ const WebsiteBuilder = () => {
       {
         websiteBuilder.map((item, index) => (
           <MainBuilder
-            key={index}
+            key={item.id}
+            index={index}
             image={item.image}
             name={item.name}
             title={item.title}
@@ -32,7 +32,8 @@ const WebsiteBuilder = () => {
       {
         responsiveWebsiteBuilder.map((item, index) => (
           <ResponsiveMainBuilder
-            key={index}
+            key={item.id}
+            index={index}
             image={item.image}
             name={item.name}
             title={item.title}
@@ -54,7 +55,24 @@ const WebsiteBuilder = () => {
         ))
       }
 
-
+      <div className='py-8'>
+        <h1 className='text-[#2C384A] text-[32px] leading-[44px] font-[400] pb-3'>Related deals you might like for</h1>
+        <div className='grid md:grid-cols-3 grid-cols-1 gap-4'>
+          {
+            relatedDeals.map((item) => (
+              <RelatedDealsCard
+                image={item.image}
+                name={item.name}
+                description={item.description}
+                oldPrice={item.oldPrice}
+                newPrice={item.newPrice}
+                discount={item.discount}
+                deals={item.deals}
+              />
+            ))
+          }
+        </div>
+      </div>
     </div>
   )
 }

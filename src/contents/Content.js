@@ -73,6 +73,7 @@ export const content = {
 
     websiteBuilder: [
         {
+            id: 1,
             image: websiteBuilderImage,
             name: 'Builder 1',
             title: 'WixPro 72-Inch Responsive Website Builder',
@@ -87,6 +88,7 @@ export const content = {
             ratingsName: 'Exceptional'
         },
         {
+            id: 2,
             image: websiteBuilderImage,
             name: 'Biulder',
             title: 'SiteCraft 68-Inch Ultimate Web Design Studio',
@@ -101,6 +103,7 @@ export const content = {
             ratingsName: 'Excellent'
         },
         {
+            id: 3,
             image: websiteBuilderImage,
             name: 'Builder 1',
             title: 'WixPro 72-Inch Responsive Website Builder',
@@ -115,6 +118,7 @@ export const content = {
 
     responsiveWebsiteBuilder: [
         {
+            id: 4,
             image: websiteBuilderImage,
             name: 'CDK',
             title: 'CDK Resposive Builder',
@@ -139,5 +143,39 @@ export const content = {
             ratings: 9.1,
             ratingsName: 'Very Good'
         },
+    ],
+
+
+    relatedDeals: [
+        {
+            id: 1,
+            image: websiteBuilderImage,
+            name: 'Webbuilder 1',
+            description: 'Computer  Modern clasic with wix support',
+            oldPrice: '39.96',
+            newPrice: '49.96',
+            discount: '20',
+            deals: 'Limited time'
+        },
+        {
+            id: 2,
+            image: websiteBuilderImage,
+            name: 'Webbuilder 1',
+            description: 'Computer  Modern clasic with wix support',
+            oldPrice: '39.96',
+            newPrice: '49.96',
+            discount: '20',
+            deals: 'Limited time'
+        },
+        {
+            id: 3,
+            image: websiteBuilderImage,
+            name: 'Webbuilder 1',
+            description: 'Computer  Modern clasic with wix support',
+            oldPrice: '39.96',
+            newPrice: '49.96',
+            discount: '20',
+            deals: 'Limited time'
+        }
     ]
 }
