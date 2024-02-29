@@ -82,6 +82,7 @@ export const content = {
                 name: 'Best Choice',
                 img: Deals1
             },
+            stars: 5,
             ratings: 9.8,
             ratingsName: 'Exceptional'
         },
@@ -95,6 +96,7 @@ export const content = {
                 name: 'Best Value',
                 img: Deals2
             },
+            stars: 4.5,
             ratings: 9.5,
             ratingsName: 'Excellent'
         },
@@ -104,8 +106,38 @@ export const content = {
             title: 'WixPro 72-Inch Responsive Website Builder',
             description: 'Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)',
             highlights: '[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.',
+            stars: 5,
             ratings: 9.3,
             ratingsName: 'Exceptional'
-        }
+        },
+    ],
+
+
+    responsiveWebsiteBuilder: [
+        {
+            image: websiteBuilderImage,
+            name: 'CDK',
+            title: 'CDK Resposive Builder',
+            description: 'An extensive library of widgets and apps, and detailed step-by-step guides',
+            discount: '26% off',
+            highlightsNumber: {
+                highlight1: 9.9,
+                highlight2: 8.9,
+                highlight3: 8.9
+            },
+            highlightText: {
+                highlightText1: 'Building responsive',
+                highlightText2: 'Cool',
+                highlightText3: 'Docs'
+            },
+            loveit: {
+                like1: 'Documentation',
+                like2: 'Easy Use',
+                like3: 'Out of box'
+            },
+            stars: 4,
+            ratings: 9.1,
+            ratingsName: 'Very Good'
+        },
     ]
 }
