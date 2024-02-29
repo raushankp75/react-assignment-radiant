@@ -10,8 +10,8 @@ const ItemsContainer = () => {
 
             <div className='my-auto'>
                 <select className='text-[13px] bg-transparent text-[#D1D6DA] p-2 border-none outline-none'>
+                    <option value="unitedstates">United States</option>
                     <option value="india">India</option>
-                    <option value="unitedstates" selected>United States</option>
                     <option value="china">China</option>
                     <option value="srilanka">Sri Lanka</option>
                 </select>

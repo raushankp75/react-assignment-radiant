@@ -29,8 +29,8 @@ const WebsiteBuilderTitle = () => {
 
                     <select className='bg-transparent p-2 border-none outline-none text-[#727D87] md:text-[13px] text-[10px]'>
                         {
-                            heading.relevant.map((rel) => (
-                                <option key={rel.name} value={rel.value}>{rel.name}</option>
+                            heading.relevant.map((rel, index) => (
+                                <option key={index} value={rel.value}>{rel.name}</option>
                             ))
                         }
                     </select>

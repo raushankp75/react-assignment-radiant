@@ -61,6 +61,7 @@ const WebsiteBuilder = () => {
           {
             relatedDeals.map((item) => (
               <RelatedDealsCard
+                key={item.id}
                 image={item.image}
                 name={item.name}
                 description={item.description}

@@ -1,14 +1,14 @@
 [
     {
         "menu": "Categories",
-        "link": "categories"
+        "link": "/categories"
     },
     {
         "menu": "Website Builders",
-        "link": "websitebuilders"
+        "link": "/"
     },
     {
         "menu": "Today's deals",
-        "link": "todaydeals"
+        "link": "/todaydeals"
     }
 ]

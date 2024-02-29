@@ -8,7 +8,7 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route path='websitebuilders' element={<WebsiteBuilder />} />
+        <Route path='/' element={<WebsiteBuilder />} />
       </Routes>
     </Layout>
   )

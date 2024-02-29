@@ -10,7 +10,7 @@ const BreadCrumbs = () => {
         <ul className='flex md:gap-3 gap-1 p-2 overflow-x-scroll scrollbar-none' >
             {
                 heading.breadCrumbs.map((item, index) => (
-                    <div className='flex md:gap-4 gap-3 items-center'>
+                    <div key={index} className='flex md:gap-4 gap-3 items-center'>
                         <a href={item.links} key={item.name}><li className='list-none text-[#727D87] text-[13px]'>{item.name}</li></a>
                         <span className='text-lg'>{index !== heading.breadCrumbs.length - 1 ? '>' : null}</span>
                     </div>
