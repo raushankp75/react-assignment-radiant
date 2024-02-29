@@ -56,7 +56,7 @@ const WebsiteBuilder = () => {
       }
 
       <div className='py-8'>
-        <h1 className='text-[#2C384A] text-[32px] leading-[44px] font-[400] pb-3'>Related deals you might like for</h1>
+        <h1 className='text-[#2C384A] md:text-[32px] text-[25px] leading-[44px] font-[400] pb-3'>Related deals you might like for</h1>
         <div className='grid md:grid-cols-3 grid-cols-1 gap-4'>
           {
             relatedDeals.map((item) => (
